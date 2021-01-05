@@ -2,7 +2,7 @@
 function duplicateLetters(...args) {
   let count = 1;
   const result = {}
-  args.forEach(string=>{
+  args.forEach(string => {
     for (let letter of string) {
       result[letter] = result[letter] ? ++result[letter] : 1
       if (result[letter] > count)
