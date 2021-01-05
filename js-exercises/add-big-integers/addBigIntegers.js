@@ -1,8 +1,8 @@
 function addBigIntegers(intString) {
     return intString.split('\n').reduce((acc, val) => {
         const output = []
-        let number_1 = acc.split('').reverse()
-        let number_2 = val.split('').reverse()
+        const number_1 = acc.split('').reverse()
+        const number_2 = val.split('').reverse()
         let remainder = 0;
         for (let i = 0; i < number_1.length || i < number_2.length; i++) {
             let ans = (number_1[i] ? +number_1[i] : 0) + (number_2[i] ? +number_2[i] : 0) + remainder
