@@ -1,10 +1,10 @@
 import { isString } from "util";
 
-function abbreviateString(str) {
-    if (!isString(str)) {
-        throw new Error("Invalid string")
+function abbreviateString(string) {
+    if (!isString(string)) {
+        throw new Error('Invalid string')
     }
-    const stringArray = str.split(' ')
+    const stringArray = string.split(' ')
     if (stringArray.length < 2)
         return stringArray.toString()
 
